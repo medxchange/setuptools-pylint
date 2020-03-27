@@ -1,0 +1,15 @@
+Source: python3-setuptools-lint
+Section: unknown
+Priority: optional
+Maintainer: Paul Knopf <pauldotknopf@gmail.com>
+Build-Depends: debhelper (>= 10),
+  python3,
+  dh-python,
+  python3-setuptools
+Standards-Version: 4.1.2
+Homepage: https://github.com/johnnoone/setuptools-pylint
+
+Package: python3-setuptools-lint
+Architecture: all
+Depends: ${misc:Depends}, python3-setuptools, pylint
+Description: This package expose pylint as a lint command into setup.py.
